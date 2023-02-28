@@ -54,17 +54,17 @@ const Calculator = () => {
                     </div>
 
                     <div className="symbols">
-                        <div className='ops'>
+                        <div className='operators'>
                             <button onClick={() => { updateCalculation('/'); }}>/</button>
                             <button onClick={() => { updateCalculation('*'); }}>*</button>
                             <button onClick={() => { updateCalculation('+'); }}>+</button>
                             <button onClick={() => { updateCalculation('-'); }}>-</button>
                             <button onClick={clear}>
                                 {' '}
-                                <img width={40} height={40} src='https://cdn-icons-png.flaticon.com/512/159/159805.png' alt='' />
+                                <img width={40} height={40} src='/delete.png' alt='' />
                             </button>
                         </div>
-                        <div className='dig'>
+                        <div className='digits'>
                             {createDigits()}
 
                             <button
